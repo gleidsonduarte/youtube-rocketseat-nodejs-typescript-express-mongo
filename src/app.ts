@@ -21,7 +21,7 @@ class App {
   }
 
   private database (): void {
-    mongoose.connect('mongodb://localhost:27017/tsnode', {
+    mongoose.connect('mongodb://root:123456@localhost:27017/local?authSource=admin', {
       useNewUrlParser: true
     })
   }
